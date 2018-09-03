@@ -3,7 +3,7 @@
 
 ### Camera Calibration
 
-The code for this step is contained in the first 4 code cells of the IPython notebook located in [project.ipynb]("./project.ipynb").
+The code for this step is contained in the first 4 code cells of the IPython notebook located in [project.ipynb](project.ipynb).
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
@@ -15,12 +15,12 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 #### 1. Distortion-corrected road image.
 
-To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
+To demonstrate this step, I will describe how I apply the distortion correction to one of the test images such as this:
 <p align="center"> <img src="./images_and_videos/undistort_output.png"> </p>
 
 #### 2. Binary conversion.
 
-I used a combination of HLS and Lab color thresholds to generate a binary image (using the function `binary_image()` in [project.ipynb]("./project.ipynb")).  Here's an example of my output for this step:
+I used a combination of HLS and Lab color thresholds to generate a binary image (using the function `binary_image()` in [project.ipynb](project.ipynb)).  Here's an example of my output for this step:
 
 <p align="center"> <img src="./images_and_videos/binary_image.png"> </p>
 
